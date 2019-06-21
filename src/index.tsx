@@ -1,10 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import ContextApp from "./context/contextApp";
+import * as serviceWorker from "./serviceWorker";
+import { DvaApp } from "./dva/dvaApp";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<ContextApp />, document.getElementById('root'));
+ReactDOM.render(<DvaApp />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
